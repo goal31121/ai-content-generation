@@ -9,6 +9,7 @@ from task._utils.model_client import DialModelClient
 from task._models.message import Message
 from task._models.role import Role
 
+#this is a generation image
 
 async def _put_image() -> Attachment:
     file_name = 'dialx-banner.png'

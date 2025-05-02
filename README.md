@@ -1,3 +1,5 @@
+#this is a readme file
+
 # Image Generation and Analysis with DIAL API
 
 A Python implementation task to work with AI image generation and analysis capabilities via DIAL API

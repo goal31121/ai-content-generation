@@ -5,8 +5,8 @@ import httpx
 
 
 class DialBucketClient:
-    def __init__(self, api_key: str , base_url: str):
-        self.api_key = api_key
+    def __init__(self, apikey: str , base_url: str):
+        self.apikey = apikey
         self.base_url = base_url
         self._bucket_id: str | None = None
         self._client: httpx.AsyncClient | None = None
@@ -14,7 +14,7 @@ class DialBucketClient:
     async def __aenter__(self):
         self._client = httpx.AsyncClient(
             base_url=self.base_url,
-            headers={'Api-Key': self.api_key},
+            headers={'Api-Key': self.apikey},
         )
         return self
 

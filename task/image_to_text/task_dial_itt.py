@@ -3,7 +3,7 @@ from io import BytesIO
 from pathlib import Path
 
 from task._models.custom_content import Attachment, CustomContent
-from task._utils.constants import API_KEY, DIAL_URL, DIAL_CHAT_COMPLETIONS_ENDPOINT
+from task._utils.constants import apikey, DIAL_URL, DIAL_CHAT_COMPLETIONS_ENDPOINT
 from task._utils.bucket_client import DialBucketClient
 from task._utils.model_client import DialModelClient
 from task._models.message import Message

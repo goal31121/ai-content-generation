@@ -1,7 +1,7 @@
 import base64
 from pathlib import Path
 
-from task._utils.constants import API_KEY, DIAL_CHAT_COMPLETIONS_ENDPOINT
+from task._utils.constants import apikey, DIAL_CHAT_COMPLETIONS_ENDPOINT
 from task._utils.model_client import DialModelClient
 from task._models.role import Role
 from task.image_to_text.openai.message import ContentedMessage, TxtContent, ImgContent, ImgUrl

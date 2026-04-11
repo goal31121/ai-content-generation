@@ -9,21 +9,21 @@ from task._utils.request import print_request
 
 class DialModelClient:
     _endpoint: str
-    _api_key: str
+    _apikey: str
 
-    def __init__(self, endpoint: str, deployment_name: str, api_key: str):
-        if not api_key or api_key.strip() == "":
+    def __init__(self, endpoint: str, deployment_name: str, apikey: str):
+        if not apikey or apikey.strip() == "":
             raise ValueError("API key cannot be null or empty")
 
         self._endpoint = endpoint.format(
             model=deployment_name
         )
-        self._api_key = api_key
+        self._apikey = apikey
 
 
     def get_completion(self, messages: list[Message], custom_fields: dict[str, Any] | None = None, **kwargs) -> Message:
         headers = {
-            "api-key": self._api_key,
+            "api-key": self._apikey,
             "Content-Type": "application/json"
         }
 

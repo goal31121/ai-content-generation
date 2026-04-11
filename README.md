@@ -33,7 +33,7 @@ By completing these tasks, you will learn:
 2. **Set your API key:**
    - Ensure that you are connected to the EPAM VPN
    - Get the DIAL API key here: https://support.epam.com/ess?id=sc_cat_item&table=sc_cat_item&sys_id=910603f1c3789e907509583bb001310c
-   - Update the `API_KEY` constant in `task/_utils/constants.py`
+   - Update the `apikey` constant in `task/_utils/constants.py`
    - Get available models from: https://ai-proxy.lab.epam.com/openai/models
 
 3. **Project structure:**

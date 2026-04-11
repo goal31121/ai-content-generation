@@ -8,8 +8,8 @@ def print_request(endpoint: str, request_data: dict, headers: dict):
     print("\n📋 Headers:")
     safe_headers = headers.copy()
     if "api-key" in safe_headers:
-        api_key = safe_headers["api-key"]
-        safe_headers["api-key"] = f"{api_key[:8]}...{api_key[-4:]}" if len(api_key) > 12 else "***"
+        apikey = safe_headers["api-key"]
+        safe_headers["api-key"] = f"{apikey[:8]}...{apikey[-4:]}" if len(apikey) > 12 else "***"
 
     for key, value in safe_headers.items():
         print(f"  {key}: {value}")
